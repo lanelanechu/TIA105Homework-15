@@ -1,4 +1,8 @@
 package work3;
+/*
+ * 請設計一隻程式,使用者輸入三個數字後,輸出結果會為正三角形、等腰
+ * 三角形、其它三角形或不是三角形,如圖示結果:
+ */
 
 import java.util.Scanner;
 
@@ -21,6 +25,7 @@ public class Q1 {
 			return "正三角形";
 		if (e1 == e2 || e2 == e3 || e1 == e3)
 			return "等腰三角形";
+		// (進階功能:加入直角三角形的判斷)
 		if (e1 * e1 + e2 * e2 == e3 * e3 || e1 * e1 + e3 * e3 == e2 * e2 || e2 * e2 + e3 * e3 == e1 * e1)
 			return "直角三角形";
 		return "其他三角形";
