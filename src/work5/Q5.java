@@ -10,11 +10,11 @@ public class Q5 {
 	}
 	
 	public static String genAuthCode() {
-		StringBuilder res = new StringBuilder();
+		String res = "";
 		String collection = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		while (res.length() < 8) {
-			res.append(collection.charAt((int) (Math.random() * collection.length())));		
+			res += collection.charAt((int) (Math.random() * collection.length()));		
 		}
-		return res.toString();
+		return res;
 	}
 }
