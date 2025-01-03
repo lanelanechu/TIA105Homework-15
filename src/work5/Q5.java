@@ -13,7 +13,7 @@ public class Q5 {
 		String res = "";
 		String collection = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		while (res.length() < 8) {
-			res += collection.charAt((int) (Math.random() * collection.length()));		
+			res += collection.charAt((int) (Math.random() * collection.length()));
 		}
 		return res;
 	}
