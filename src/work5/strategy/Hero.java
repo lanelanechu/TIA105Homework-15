@@ -1,8 +1,7 @@
-package work5.hero;
+package work5.strategy;
 
 public abstract class Hero {
 	// 省略 getter/setter...
-	
 	private String name;
 	private int level;
 	private double exp;
@@ -19,7 +18,7 @@ public abstract class Hero {
 	
 	public abstract void attack();
 	
-	public abstract void move();
-	
-	public abstract void defend();
+	public void startAction(Action action) {
+		action.doAction();
+	}
 }

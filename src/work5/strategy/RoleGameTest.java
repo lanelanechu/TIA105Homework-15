@@ -1,4 +1,4 @@
-package work5.hero;
+package work5.strategy;
 
 public class RoleGameTest {
 
@@ -7,10 +7,12 @@ public class RoleGameTest {
 		Hero archer = new ArrowMan("勒苟拉斯", 1, 0);
 		
 		saber.attack();
-		saber.move();
+		saber.startAction(new Move());
+		saber.startAction(new Defend());
 		
 		archer.attack();
-		archer.move();
+		archer.startAction(new Move());
+		archer.startAction(new Defend());
 	}
 
 }

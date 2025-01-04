@@ -1,4 +1,4 @@
-package work5.hero;
+package work5.strategy;
 
 public class ArrowMan extends Hero {
 	
@@ -13,15 +13,5 @@ public class ArrowMan extends Hero {
 	@Override
 	public void attack() {
 		System.out.println("放弓箭");
-	}
-
-	@Override
-	public void move() {
-		System.out.println("跑步");
-	}
-
-	@Override
-	public void defend() {
-		System.out.println("做防禦動作");
-	}
+	}	
 }
