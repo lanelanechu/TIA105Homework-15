@@ -35,19 +35,19 @@ public class Hero {
 		defend = new Unknown();
 	}
 	
-	public void attack() {
+	public void showAttack() {
 		System.out.print("攻擊方式：");
-		attack.attack();
+		attack.actAttack();
 	}
 
-	public void move() {
+	public void showMove() {
 		System.out.print("移動方式：");
-		move.move();
+		move.actMove();
 	}
 
-	public void defend() {
+	public void showDefend() {
 		System.out.print("防禦方式：");
-		defend.defend();
+		defend.actDefend();
 	}
 		
 

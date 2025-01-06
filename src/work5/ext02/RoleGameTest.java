@@ -20,9 +20,9 @@ public class RoleGameTest {
 			hero.setIMove();
 			hero.setIDefend();
 			
-			hero.attack();
-			hero.move();
-			hero.defend();
+			hero.showAttack();
+			hero.showMove();
+			hero.showDefend();
 			System.out.println();
 		}
 	}
