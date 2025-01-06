@@ -1,4 +1,4 @@
-package work5.pen;
+package work5.ext01;
 
 public class Pencil extends Pen {	
 	public Pencil(String brand, double price) {

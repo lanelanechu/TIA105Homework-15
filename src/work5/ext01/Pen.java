@@ -1,4 +1,4 @@
-package work5.pen;
+package work5.ext01;
 
 public abstract class Pen {
 	private String brand;

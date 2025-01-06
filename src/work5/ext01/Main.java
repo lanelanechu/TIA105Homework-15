@@ -1,4 +1,4 @@
-package work5.pen;
+package work5.ext01;
 
 public class Main {
 	public static void main(String[] args) {

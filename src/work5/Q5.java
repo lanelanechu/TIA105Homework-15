@@ -11,9 +11,9 @@ public class Q5 {
 	
 	public static String genAuthCode() {
 		String res = "";
-		String collection = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		String allChar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		while (res.length() < 8) {
-			res += collection.charAt((int) (Math.random() * collection.length()));
+			res += allChar.charAt((int) (Math.random() * allChar.length()));
 		}
 		return res;
 	}
