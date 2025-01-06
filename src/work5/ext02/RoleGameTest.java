@@ -10,7 +10,7 @@ public class RoleGameTest {
 		heroes.add(new Anpanman("麵包超人", 1, 20));
 		heroes.add(new MarioBros("瑪利歐", 10, 2500));
 		heroes.add(new MarioBros("路易吉", 10, 2000));
-		heroes.add(new Pokemon("皮卡丘", 99, 9999));
+		heroes.add(new Pokemon("噴火龍", 99, 9999));
 		heroes.add(new Hero());
 		
 		for (Hero hero : heroes) { 

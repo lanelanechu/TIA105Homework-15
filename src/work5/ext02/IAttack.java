@@ -12,13 +12,7 @@ class Punch implements IAttack {
 
 class Fire implements IAttack {
 	public void actAttack() {
-		System.out.println("火球花攻擊");
-	}
-}
-
-class Lightning implements IAttack {
-	public void actAttack() {
-		System.out.println("十萬伏特");
+		System.out.println("火球攻擊");
 	}
 }
 

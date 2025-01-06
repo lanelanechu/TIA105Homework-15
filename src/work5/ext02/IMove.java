@@ -16,12 +16,6 @@ class Run implements IMove {
 	}
 }
 
-class Crawl implements IMove {
-	public void actMove() {
-		System.out.println("爬");
-	}
-}
-
 class Walk implements IMove {
 	public void actMove() {
 		System.out.println("走路");

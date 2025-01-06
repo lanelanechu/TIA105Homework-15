@@ -9,12 +9,12 @@ public class Pokemon extends Hero {
 	
 	@Override
 	public void setIAttack() {
-		attack = new Lightning();
+		attack = new Fire();
 	}
 	
 	@Override
 	public void setIMove() {
-		move = new Crawl();
+		move = new Run();
 	}
 	
 	@Override
