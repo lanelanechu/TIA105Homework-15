@@ -9,23 +9,18 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Main {
-	public static void main(String[] args) {
-		try {
-			FileWriter fw = new FileWriter("/Users/ryuryu4211/Desktop/TibaMe/Java/TIA105__Workspace/TIA105Homework-15/src/work7/random_number/Data.txt", true);
-			BufferedWriter bw = new BufferedWriter(fw);
-			PrintWriter pw = new PrintWriter(bw);
-			
-			for (int i = 1; i <= 10; i++) {
-				pw.append((int)(Math.random() * 1000) + 1 + " ");
-			}
-			pw.append("\n");
-			
-			pw.close();
-			bw.close();
-			fw.close();
-			
-		} catch(IOException e) {
-			e.printStackTrace();
+	public static void main(String[] args) throws IOException {
+		FileWriter fw = new FileWriter("/Users/ryuryu4211/Desktop/TibaMe/Java/TIA105__Workspace/TIA105Homework-15/src/work7/random_number/Data.txt", true);
+		BufferedWriter bw = new BufferedWriter(fw);
+		PrintWriter pw = new PrintWriter(bw);
+
+		for (int i = 1; i <= 10; i++) {
+			pw.append((int)(Math.random() * 1000) + 1 + " ");
 		}
+		pw.append("\n");
+		
+		pw.close();
+		bw.close();
+		fw.close();
 	}
 }
