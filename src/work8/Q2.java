@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 public class Q2 {
 	public static void main(String[] args) {
-		Collection<Train> train = new ArrayList<>();
+		List<Train> train = new ArrayList<>();
 		train.add(new Train(202, "普悠瑪", "樹林", "花蓮", 400));
 		train.add(new Train(1254, "區間", "屏東", "基隆", 700));
 		train.add(new Train(118, "自強", "高雄", "台北", 500));
@@ -28,21 +28,20 @@ public class Q2 {
 	}
 	
 	// 請寫一隻程式,能印出不重複的Train物件
-	public static void requirement1(Collection<Train> train) {
+	public static void requirement1(List<Train> train) {
 		Set<Train> trainSet = new HashSet<>(train);
 		setIteration(trainSet);
 		
 	}
 	
 	// 請寫一隻程式,讓Train物件印出時,能以班次編號由大到小印出
-	public static void requirement2(Collection<Train> train) {
-		List<Train> trainList = new ArrayList<>(train);
-		Collections.sort(trainList);
-		listIteration(trainList);
+	public static void requirement2(List<Train> train) {
+		Collections.sort(train);
+		listIteration(train);
 	}
 	
 	// 承上,不僅能讓班次編號由大排到小印出, 還可以不重複印出Train物件
-	public static void requirement3(Collection<Train> train) {
+	public static void requirement3(List<Train> train) {
 		Set<Train> trainSet = new TreeSet<>(train);
 		setIteration(trainSet);
 	}
