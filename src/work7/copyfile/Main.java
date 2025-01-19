@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Main {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		File source = new File(
 				"/Users/ryuryu4211/Desktop/TibaMe/Java/TIA105__Workspace/TIA105Homework-15/src/work7/copyfile/source.txt");
 		File target = new File(

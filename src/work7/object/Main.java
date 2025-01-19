@@ -33,6 +33,7 @@ public class Main {
 		// 輸入
 		FileInputStream fis = new FileInputStream(targetFile);
 		ObjectInputStream ois = new ObjectInputStream(fis);
+		
 		try {
 			while (true) {
 				Object current = ois.readObject();
